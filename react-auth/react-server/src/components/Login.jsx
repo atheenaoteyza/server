@@ -10,7 +10,9 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:5001/api/login", {
+      const apiUrl = "https://server-nu-brown.vercel.app";
+
+      const response = await axios.post(`${apiUrl}/api/login`, {
         email,
         password,
       });
