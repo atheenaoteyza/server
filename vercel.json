@@ -6,7 +6,7 @@
       "use": "@vercel/node"
     },
     {
-      "src": "src/*",
+      "src": "react-auth/react-server/*",
       "use": "@vercel/static"
     }
   ],
@@ -17,7 +17,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/src/$1"
+      "dest": "/react-auth/react-server/$1"
     }
   ]
 }
