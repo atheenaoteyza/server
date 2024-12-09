@@ -3,6 +3,9 @@ import jwt from "jsonwebtoken";
 
 export default function handler(req, res) {
   if (req.method === "POST") {
+    if (!req.body) {
+      return res.status(405).json({ message: "no request" });
+    }
     const { email, password } = req.body;
     const users = JSON.parse(fs.readFileSync("data/db.json")).users;
 
