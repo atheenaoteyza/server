@@ -1,0 +1,33 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+/node_modules/
+/react-auth/react-server/node_modules/
+
+# Build files
+/build/
+/dist/
+/react-server/build/
+/react-auth/build/
+
+# Environment files
+.env
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Vercel specific files
+.vercel
+
+# Debug files
+*.swp
+*.swo
+*.bak
+
+# Editor-specific files
+.vscode/
+.idea/
